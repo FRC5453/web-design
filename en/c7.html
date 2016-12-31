@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team 5453</title>
+  <link rel="shortcut icon" href="images/logo/FIRST28.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+    <style>
+      /* 设置浏览器宽度不小于1201px时*/ 
+      @media screen and (min-width: 1367px) { 
+        #logo { 
+          background: url('../image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 15px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin-top: 15px; 
+          margin-right: 15px; 
+        }
+        iframe {
+          width: 375px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c1.png') no-repeat;
+          height: 450px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于1366px时*/ 
+      @media screen and (max-width: 1366px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 30px 5px 10px;
+        }
+        iframe {width: 375px;} 
+        iframe {height: 250px;}
+        .home-contact {
+          background: url('../image/banner/c11.png') no-repeat;
+          height: 425px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+      @media screen and (max-width: 1024px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 25px 5px 10px;
+        }
+        iframe {
+          padding-top: 50px; 
+          width: 350px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c111.png') no-repeat;
+          height: 400px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+      
+      @media screen and (max-width: 768px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 0px; 
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin: 15px 0px 5px 0px;
+        }
+        iframe{
+          padding-top: 10px;
+          width: 645px;
+          height: 430px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 230px;
+        }      
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 736*/ 
+      
+      @media screen and (max-width: 736px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 0px 5px 45px; 
+        }
+        .languageholder {
+          text-align: center;
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 45px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 200px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于480时*/ 
+      @media screen and (max-width: 480px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 14px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 12px 40px 5px 0px;
+        }
+        iframe{
+          padding-top: 0px;
+          width: 320px;
+          height: 220px;
+        } 
+        .navbar-header button.navbar-toggle {
+          margin-right: 25px;
+        }
+        .home-contact {
+          background: url('../image/banner/c11111.png') no-repeat;
+          height: 130px;
+        }
+        } 
+        @media screen and (max-width: 320px) { 
+          #logo { 
+            background: url('/image/logo/first1.png') no-repeat; 
+            width: 148px; 
+            height: 35px; 
+            margin: 12px 0px 5px 10px;
+          }
+          .languageholder { 
+            float: right; 
+            text-align:center; 
+            margin-right: 5%;           
+            margin-top: 13px;
+          }
+          .navbar-header button.navbar-toggle {
+            margin-right: 15px;
+          }
+          iframe{
+            padding-top: 0px;
+            width: 260px;
+            height: 180px;
+          }
+          .home-contact {
+            background: url('../image/banner/c11111.png') no-repeat;
+            height: 120px;
+          }
+        } 
+      } 
+    </style>
+    
+</head>
+
+<body>
+
+  <div class="row-p5C">
+     <div class="blog-banner hidden-xs">
+          <div class="hidden-xs">
+              <p><a class="btn btn-lg btn blog-banner-pre-btn" href="c6.html" role="button">Pre Profile &nbsp;<span class="glyphicon glyphicon-hand-up"></span></a></p>
+          </div>
+     </div>
+   </div>
+    
+    <!--page-header -->
+    <div class="page-header">
+    <h1 class="text-center"><small><h1>Haoran Long</h1></small></h1>
+    </div>
+    <div class="row-p5">
+    <div class="frc-content col-md-8 col-sm-12 col-xs-12">
+    <p><strong><h2>I am Haoran Long.</h2></strong></p> 
+    <p><h3>I’m currently 14 years old and studying at Futian Foreign Language School in Jintian district. My hobbies are robotics and sports, etc. I am skilled at Mechnical structures and Sponsor Pitching . I am in charge of sponsors and I hope that we can achieve a lot in this season of FRC.</h3></p>  </div>
+    <div class="frc-video col-md-4 col-sm-12 col-xs-12">
+       <img src="image/team/c7.jpg" alt="Home Pitcure" class="img-responsive">
+    </div>
+    </div>     
+
+    <div class="page-header">
+    <h1 class="text-center"><small></small></h1>
+    </div>
+
+    <div class="row-p5C">
+      <div class="blog-banner hidden-xs">
+        <div class="hidden-xs">
+               <p><a class="btn btn-lg btn blog-banner-pre-btn" href="c8.html" role="button">Next Profile &nbsp;<span class="glyphicon glyphicon-hand-down"></span></a></p>
+        </div>
+      </div>
+    </div>
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>

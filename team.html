@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team 5453</title>
+  <link rel="shortcut icon" href="images/logo/FIRST28.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+    <style>
+      /* 设置浏览器宽度不小于1201px时*/ 
+      @media screen and (min-width: 1367px) { 
+        #logo { 
+          background: url('../image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 15px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin-top: 15px; 
+          margin-right: 15px; 
+        }
+        iframe {
+          width: 375px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c1.png') no-repeat;
+          height: 450px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+        .team-mem-nav {
+          width: 620px;
+          margin-left: 33%;
+          margin-right: 33%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于1366px时*/ 
+      @media screen and (max-width: 1366px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 30px 5px 10px;
+        }
+        iframe {width: 375px;} 
+        iframe {height: 250px;}
+        .home-contact {
+          background: url('../image/banner/c11.png') no-repeat;
+          height: 425px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+        .team-mem-nav {
+          width: 610px;
+          margin-left: 25%;
+          margin-right: 25%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+      @media screen and (max-width: 1024px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 25px 5px 10px;
+        }
+        iframe {
+          padding-top: 50px; 
+          width: 350px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c111.png') no-repeat;
+          height: 400px;
+        }
+        .team-mem-nav {
+          width: 610px;
+          margin-left: 18%;
+          margin-right: 18%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+      
+      @media screen and (max-width: 768px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 0px; 
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin: 15px 0px 5px 0px;
+        }
+        iframe{
+          padding-top: 10px;
+          width: 645px;
+          height: 430px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 230px;
+        }
+        .team-mem-nav {
+          width: 610px;
+          margin-left: 8%;
+          margin-right: 8%;
+        }      
+      } 
+      /* 设置了浏览器宽度不大于736px时*/ 
+      
+      @media screen and (max-width: 736px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 0px 5px 45px; 
+        }
+        .languageholder {
+          text-align: center;
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 45px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 200px;
+        }
+        .team-mem-nav {
+          width: 610px;
+          margin-left: 5%;
+          margin-right: 5%;
+        } 
+      } 
+      /* 设置了浏览器宽度不大于678px时 */       
+      @media screen and (max-width: 678px) { 
+       .team-mem-nav {
+         width: 620px;
+         margin-left: 1%;
+         margin-right: 1%;
+       }
+      }
+      /* 设置了浏览器宽度不大于578px时*/       
+      @media screen and (max-width: 568px) { 
+       .team-mem-nav {
+         width: 65%;
+         margin-left: 20%;
+         margin-right: 20%;
+       }
+      }
+      /* 设置了浏览器宽度不大于480时*/ 
+      @media screen and (max-width: 480px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 14px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 12px 40px 5px 0px;
+        }
+        iframe{
+          padding-top: 0px;
+          width: 320px;
+          height: 220px;
+        } 
+        .navbar-header button.navbar-toggle {
+          margin-right: 25px;
+        }
+        .home-contact {
+          background: url('../image/banner/c11111.png') no-repeat;
+          height: 130px;
+        }
+        .team-mem-nav {
+          width: 328px;
+          margin-left: 13%;
+          margin-right: 13%;
+          margin: center;
+        }
+      } 
+        /* 设置了浏览器宽度不大于320时*/ 
+        @media screen and (max-width: 320px) { 
+          #logo { 
+            background: url('/image/logo/first1.png') no-repeat; 
+            width: 148px; 
+            height: 35px; 
+            margin: 12px 0px 5px 10px;
+          }
+          .languageholder { 
+            float: right; 
+            text-align:center; 
+            margin-right: 5%;           
+            margin-top: 13px;
+          }
+          .navbar-header button.navbar-toggle {
+            margin-right: 15px;
+          }
+          iframe{
+            padding-top: 0px;
+            width: 260px;
+            height: 180px;
+          }
+          .home-contact {
+            background: url('../image/banner/c11111.png') no-repeat;
+            height: 120px;
+          }
+          .team-mem-nav {
+          width: 76.8%;
+          margin-left: 15%;
+          margin-right: 15%;
+          margin: center;
+         }
+       } 
+     } 
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="index.html"></a>
+          <div class="languageholder visible-xs">
+                <ul id="lan-mode-left" class="language-mode">
+                    <li><a href="../index.html" class="language-img"></a></li>
+                </ul>
+          </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="languageholder hidden-xs">
+                <ul class="language-mode">
+                    <li><a href="en/index.html" class="language-img"></a></li>
+                </ul>
+          </div>
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="frc.html">FRC比赛</a></li>
+            <li><a href="team.html">队伍</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="sponsor.html">赞助商</a></li>
+            <li><a href="contact.html">联系我们</a></li>           
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="page-header">
+    <h1 class="text-center"><small>队伍简介</small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="frc-content col-md-8 col-sm-12 col-xs-12">
+      <p>我们是5453队，一直立足于深圳的有2年历史的队伍。我们的队名是Red comet，这队名刚好印证了我们整个队伍的热情与激情。去年，我们的队伍曾打进过FRC的半决赛，并取得了令人骄傲的战绩。今年我们重整旗鼓，整装待发，准备迎接新一个赛季的FRC、CRC的比赛。在我们队伍中，每一位队员都对FRC十分有经验，大部分的队员已经参加过上一届的FRC或者是CRC的比赛了，有一些在加入我们队伍之前，曾经参加过RCJ或者是FLL的比赛了并取得过较好的战绩，这让我们的队伍信心满满。我们的队员之间都好像手足一般，有着极高的默契，不管是机械组、程序组、商务组，每一个组都是一个紧凑的部件，各个部件拼接在了一起，成为了我们队伍这个机器人。</p> 
+      <p>我们的队伍就好似红色的彗星，在今年的三月八号，我们将会飞向深圳FRC赛区，在赛场上大放我们的光芒，表现出我们的队伍那种如火一般的热情。让观众们能感受到我们炙热的温度。</p>
+      <p>这个夏天，我们能走多远?</p>  
+    </div>
+    <div class="frc-video col-md-4 col-sm-12 col-xs-12">
+      <img src="image/team/b1.jpg" alt="Home Pitcure" class="img-responsive">
+    </div>
+  </div>
+
+  <!--page-header -->
+  <div class="page-header">
+    <h1 class="text-center"><small>队伍导师</small></h1>
+  </div>
+  <div class="row-p5">
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l2.jpg"  alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center">王颖</h3>
+           <h4 class="text-center">机器结构导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l1.jpg"  alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >王绍敏</h3>
+           <h4 class="text-center">编程导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l3.jpg" alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >吴五九</h3>
+           <h4 class="text-center">管理导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l5.jpg" alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >殷世非</h3>
+           <h4 class="text-center">总导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l8.jpg" alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >黎锐全</h3>
+           <h4 class="text-center">技术总导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l7.jpg" alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >孙铁明</h3>
+           <h4 class="text-center">技术兼商务志愿者导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l6.jpg" alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >肖税</h3>
+           <h4 class="text-center">视频宣传导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l5.jpg" alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >何丹灵</h3>
+           <h4 class="text-center">商务志愿者导师</h4>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12">
+       <div class="team-leader thumbnail">
+       <a href="frc.html"><img src="image/team/l4.jpg"  alt="Home Pitcure" class="img-responsive "></a>
+         <div class="caption">
+           <h3 class="text-center" >乔凯</h3>
+           <h4 class="text-center">网站导师</h4>
+         </div>
+       </div>
+     </div>
+  </div>
+  <div class="page-header">
+    <h1 class="text-center"><small>队伍成员</small></h1>
+  </div>
+  <div class="row-p5">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs team-mem-nav" role="tablist">
+      <li role="presentation" class="active"><a href="#all" role="tab" data-toggle="tab">全部</a></li>
+      <li role="presentation" class=""><a href="#programme" role="tab" data-toggle="tab">程序</a></li>
+      <li role="presentation" class=""><a href="#mechanical" role="tab" data-toggle="tab">机器结构</a></li>
+      <li role="presentation" class=""><a href="#designer" role="tab" data-toggle="tab">剪辑和设计</a></li>
+      <li role="presentation" class=""><a href="#sponsorship" role="tab" data-toggle="tab">商务</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content team-member-img">
+      <div role="tabpanel" class="tab-pane active" id="all"">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c1.html"><img src="image/team/c1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">陈鹏天</h3>
+            <h4 class="text-center">5453队队长</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c6.html"><img src="image/team/c6.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">黄蔚杰</h3>
+            <h4 class="text-center">编程组负责人</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c3.html"><img src="image/team/c3.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">孙士尧</h3>
+            <h4 class="text-center">网站技术人员</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c4.html"><img src="image/team/c4.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">雷伟佳</h3>
+            <h4 class="text-center">网站技术负责人</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+           <a href="c7.html"><img src="image/team/c7.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">龙浩然</h3>
+            <h4 class="text-center">商务组负责人</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c9.html"><img src="image/team/c9.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">宋沛玉</h3>
+            <h4 class="text-center">视频编辑负责人</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">张高荣</h3>
+            <h4 class="text-center">机器制作者</h4>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">陈致远</h3>
+            <h4 class="text-center">机械工程师</h4>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">郭赫天</h3>
+            <h4 class="text-center">建模组负责人</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c8.html"><img src="image/team/c8.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">张国瑞</h3>
+            <h4 class="text-center">机械工程师</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c2.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">谢昱</h3>
+            <h4 class="text-center">机械工程师</h4>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c5.html"><img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive"></a>
+          <div class="caption">
+            <h3 class="text-center">陆圣庸</h3>
+            <h4 class="text-center">机械组负责人</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div role="tabpanel" class="tab-pane" id="programme">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c4.html"><img src="image/team/c4.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">雷伟佳</h3>
+                <h4 class="text-center">网站设计人员</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c9.html"><img src="image/team/c9.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">宋沛玉</h3>
+                <h4 class="text-center">编程人员</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c1.html"><img src="image/team/c1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">陈鹏天</h3>
+                <h4 class="text-center">机器人程序员</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c3.html"><img src="image/team/c3.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">孙士尧</h3>
+                <h4 class="text-center">网站技术支持</h4>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="mechanical">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c6.html"><img src="image/team/c6.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">黄蔚杰</h3>
+                <h4 class="text-center">工程师</h4>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">张高荣</h3>
+            <h4 class="text-center">机器制作者</h4>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">陈致远</h3>
+            <h4 class="text-center">机械工程师</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <a href="c8.html"><img src="image/team/c8.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">张国瑞</h3>
+            <h4 class="text-center">机械工程师</h4>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <a href="c7.html"><img src="image/team/c7.jpg" alt="Home Pitcure" class="img-responsive"></a>
+            <div class="caption">
+              <h3 class="text-center">龙浩然</h3>
+              <h4 class="text-center">工程师</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="designer">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <a href="c6.html"><img src="image/team/c6.jpg" alt="Home Pitcure" class="img-responsive"></a>
+            <div class="caption">
+              <h3 class="text-center">黄蔚杰</h3>
+              <h4 class="text-center">图样设计员</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+          <img src="image/team/c5.jpg" alt="Home Pitcure" class="img-responsive">
+          <div class="caption">
+            <h3 class="text-center">郭赫天</h3>
+            <h4 class="text-center">建模组负责人</h4>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c9.html"><img src="image/team/c9.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">宋沛玉</h3>
+                <h4 class="text-center">视频编辑员</h4>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="thumbnail">
+            <a href="c1.html"><img src="image/team/c1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+            <div class="caption">
+              <h3 class="text-center">陈鹏天</h3>
+              <h4 class="text-center">平面设计员</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="sponsorship">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c7.html"><img src="image/team/c7.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">龙浩然</h3>
+                <h4 class="text-center">商务组组长</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c6.html"><img src="image/team/c6.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">黄蔚杰</h3>
+                <h4 class="text-center">商务人员</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="thumbnail">
+              <a href="c4.html"><img src="image/team/c4.jpg" alt="Home Pitcure" class="img-responsive"></a>
+              <div class="caption">
+                <h3 class="text-center">雷伟佳</h3>
+                <h4 class="text-center">商务人员</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 class="text-center"><small>队伍资源</small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="thumbnail">
+        <a href="team-resource.html"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+      </div>
+    </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="thumbnail">
+        <a href="team-resource.html"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+      </div>
+    </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="thumbnail">
+        <a href="team-resource.html"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+      </div>
+    </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="thumbnail">
+        <a href="team-resource.html"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+      </div>
+    </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="thumbnail">
+        <a href="team-resource.html"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+      </div>
+    </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+      <div class="thumbnail">
+        <a href="team-resource.html"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row-p0">
+      <div class="home-contact hidden-xs">
+          <h1 class="home-contact-title">Get in touch, let's do FRC! </h1>
+          <p class="hidden-sm home-contact-par" ><em>We are a team full of passion. </em></p>
+          <p><a class="btn btn-lg btn home-contact-btn" href="contact.html" role="button">Contact Us &nbsp;<span class="glyphicon glyphicon-hand-right"></span></a></p>    
+      </div>
+    </div>
+
+  <div class="row-p0">
+      <div class="home-contact visible-xs">
+          <p><a class="btn btn-lg btn home-contact-btn2" href="contact.html" role="button">Contact Us &nbsp;<span class="glyphicon glyphicon-hand-right"></span></a></p>    
+      </div>
+  </div>
+
+   <footer class="panel-footer">
+    <div class="container-1">
+      <div class="row-p5">
+        <section id="hours" class="col-sm-3">
+          <p>FIRST机器人竞赛<br>
+          为了让更多人认识科学和科技的重要性，而且从中得到启发。
+          </p>
+
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-3">
+          <span>地址:</span><br>
+          东5楼，515栋<br>
+          G八卦二路, 鹏基工业区<br>
+          邮编50600，深圳市福田区
+
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>赞助:<br>
+          深圳市搭搭乐乐文化传播有限公司<br>
+          中国城市青少年机器人联盟</p>
+           <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>版权所有:<br>
+          Name: Leo Lei <br>
+          Phone: 158-0755-7813<br>
+          Email: <a class="linkbg" href="www.163.com">leoleiisgood@163.com</a>
+        </section>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="row-p0">
+    <div class="footer-last">
+      <a class="pull-left hidden-xs col-md-4 col-sm-6 col-xs-12"> &copy; Copyright 2017. All rights reversed.</a>
+      <div>
+      <a class="text-center col-md-2 hidden-sm hidden-xs"></a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="index.html">主页</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="frc.html">FRC比赛</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="team.html">队伍</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="blog.html">博客</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="sponsor.html">赞助</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="contact.html">联系我们</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>

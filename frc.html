@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FRC介绍</title>
+  <link rel="shortcut icon" href="images/logo/FIRST28.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+    <style>
+      /* 设置浏览器宽度不小于1201px时*/ 
+      @media screen and (min-width: 1367px) { 
+        #logo { 
+          background: url('../image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 15px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin-top: 15px; 
+          margin-right: 15px; 
+        }
+        iframe {
+          width: 375px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c1.png') no-repeat;
+          height: 450px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于1366px时*/ 
+      @media screen and (max-width: 1366px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 30px 5px 10px;
+        }
+        iframe {width: 375px;} 
+        iframe {height: 250px;}
+        .home-contact {
+          background: url('../image/banner/c11.png') no-repeat;
+          height: 425px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+      @media screen and (max-width: 1024px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 25px 5px 10px;
+        }
+        iframe {
+          padding-top: 50px; 
+          width: 350px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c111.png') no-repeat;
+          height: 400px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+      
+      @media screen and (max-width: 768px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 0px; 
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin: 15px 0px 5px 0px;
+        }
+        iframe{
+          padding-top: 10px;
+          width: 645px;
+          height: 430px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 230px;
+        }      
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 736*/ 
+      
+      @media screen and (max-width: 736px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 0px 5px 45px; 
+        }
+        .languageholder {
+          text-align: center;
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 45px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 200px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于480时*/ 
+      @media screen and (max-width: 480px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 14px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 12px 40px 5px 0px;
+        }
+        iframe{
+          padding-top: 0px;
+          width: 320px;
+          height: 220px;
+        } 
+        .navbar-header button.navbar-toggle {
+          margin-right: 25px;
+        }
+        .home-contact {
+          background: url('../image/banner/c11111.png') no-repeat;
+          height: 130px;
+        }
+        } 
+        @media screen and (max-width: 320px) { 
+          #logo { 
+            background: url('/image/logo/first1.png') no-repeat; 
+            width: 148px; 
+            height: 35px; 
+            margin: 12px 0px 5px 10px;
+          }
+          .languageholder { 
+            float: right; 
+            text-align:center; 
+            margin-right: 5%;           
+            margin-top: 13px;
+          }
+          .navbar-header button.navbar-toggle {
+            margin-right: 15px;
+          }
+          iframe{
+            padding-top: 0px;
+            width: 260px;
+            height: 180px;
+          }
+          .home-contact {
+            background: url('../image/banner/c11111.png') no-repeat;
+            height: 120px;
+          }
+        } 
+      } 
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="index.html"></a>
+          <div class="languageholder visible-xs">
+                <ul id="lan-mode-left" class="language-mode">
+                    <li><a href="../index.html" class="language-img"></a></li>
+                </ul>
+          </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="languageholder hidden-xs">
+                <ul class="language-mode">
+                    <li><a href="en/index.html" class="language-img"></a></li>
+                </ul>
+          </div>
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="frc.html">FRC比赛</a></li>
+            <li><a href="team.html">队伍</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="sponsor.html">赞助商</a></li>
+            <li><a href="contact.html">联系我们</a></li>           
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
+  <div class="row-p0">
+    <div class="frc-banner hidden-xs">
+       <div class="hidden-xs">
+         <img src="image/logo/frc.png" alt="FRC Pitcure" class="img-responsive">
+       </div>       
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 class="text-center"><small>这场盛大的冒险将在一月七日，2017年开始！各位参赛者们，准备好你们的装置，然后起飞吧！</small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="frc-content col-md-7 col-sm-12 col-xs-12">
+       <p>把你的护目镜戴好，然后开始组建你的队伍吧！你将成为全球3400个队，85000名学生和他们的导师中的一员！你们将准备自己的机器，然后在2017年的<em>FIRST<sup>®</sup></em>蒸汽工艺<sup>SM</sup>中起飞！</p>
+       <p><em>FIRST</em><sup>®</sup>机器人比赛是终极的思维对决<sup>TM</sup> 取胜的关键在于把你狂野的想象与偶然的启发揉合在一起！小队将由高中生组成（14-18岁/9年级到12年级），通过结合体育的激动人心，艺术的动人，和最尖端的科学技术，他们将会被要求创作一个队伍的队徽，磨炼与其他人工作的技巧，而且设计并建造一个被详细编程了的机器人，来完成比赛中的各个挑战，并与其他机器人相竞争</p>
+       <p>队伍们&nbsp在导师的指导下将一起搭建，编程并测试机器人用来和其他队伍抗争。同时，他们的家人和朋友们将可以为他们在全世界多于140场的FRC比赛中欢呼，喝彩：全部都是为了争夺在2017，<em>FIRST</em><sup>®</sup>比赛赛季将于四月19日-22日休斯顿和四月26-29日圣路易斯的冠军总决赛的名额。</p>
+    </div>
+    <div class="frc-video col-md-5 col-sm-12 col-xs-12">
+      <iframe src="https://www.youtube.com/embed/37GBEBLfhWA" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!--page-header -->
+  <div class="page-header">
+    <h1 class="text-center"><small>什么是FIRST机器人竞赛？</small></h1>
+  </div>
+
+  <div class="row-p5">
+    <div class="frc-content col-md-7 col-sm-12 col-xs-12">
+       <h4><strong>将体育比赛的激动人心和最前沿的科学技术结合在一起。</strong></h4><p>点击此处 <a href="http://www.firstinspires.org/robotics/frc/what-is-first-robotics-competition" target="_blank">来了解更多</a>.<br/> </p> 
+       <p>FIRST机器人竞赛是终极的思维对决，但很多高中参赛选手更愿意叫它“你所可能体验到的的最难得到的快乐。”</p>
+       <p>在有限的资源，六周的限期和严格的规则约束之下，所有FRC队伍们将被挑战去完成一系列艰难的任务：为机器人筹集资金，设计队徽，磨炼团队合作技巧，并且，也是最重要的，建造并编程一个工业级别的机器人，来在一个提前设定好的游戏场地上玩一个有着繁复规则的“游戏”，并且要面对和他们一样的精英。坦白说，这就是现在的学生们可以接触到的和现实世界最接近的工程项目了。
+       自愿加入的各领域的专家将用他们的才能来辅佐这个队伍，来帮助他们取得这个赛季末尾那充满悬念的FIRST赢家的荣耀。</p>  
+    </div>
+    <div class="frc-video col-md-5 col-sm-12 col-xs-12">
+      <iframe src="https://www.youtube.com/embed/hcS7M4sY0fQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 class="text-center"><small>参加FIRST机器人竞赛带来的<strong>机遇</strong></small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="frc-content col-md-7 col-sm-6 col-xs-12">
+      <p><strong><em>FIRST </em></strong><strong>机器人竞赛的参赛者可以得到以下的经验:</strong>&nbsp;</p>
+         <ul>
+           <li>向专业的工程师学习的机会</li>
+           <li>掌握STEM必备的能力</li>
+           <li>学习并使用复杂的编程语言，五金工具及工业级的加工设备</li>
+           <li>设计并建造一台属于自己的机器人，然后用它和其他队伍对抗</li>
+           <li>加强团队合作能力，沟通技巧以及增加人际交往。</li>
+           <li>在激烈的比赛中能做到自己的临时联盟合作</li>
+           <li>理解并贯通“高尚的专业精神”</li>
+           <li>争夺自己在<em>FIRST </em>冠军赛上的位置</li>
+           <li>同时，证明自己来获得总额达数百万的奖学金！</li>
+         </ul>
+      </p>     
+    </div>
+    <div class="frc-video col-md-5 col-sm-6 col-xs-12">
+      <iframe src="https://www.youtube.com/embed/UdVIv8nPkgY" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 class="text-center"><small>每个FRC队伍都<strong>需要</strong> 什么？</small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="frc-content col-md-7 col-sm-6 col-xs-12">
+      <p><strong>每个<em>FIRST机器人竞赛</em>参加队伍都需要：</strong>&nbsp;</p>
+          <ul>
+            <li>两个或以上成人导师，需要懂得不仅是专业的技术性知识，还要有非专业的能力。同时，他们必须有足够的决心来领导他的队伍，来建造他们所需的机器人和带领他们参赛，直到赛季结束（或更久）</li>
+            <li>十个或以上的高中年龄阶段的学生，他们要愿意在课后付出可观的时间（也许要在周末或深夜），来完成一切他们所在的队所需要才能成功的工作（对的，有时候会很多）。但这并不代表只有一部分人能参与：一个队伍会需要所有它可能得到的帮助</li>
+            <li>一个适合的会议室</li>
+            <li>一个适当大小的工作室，用来设计并建造一个工业级的机器人（差不多70公斤吧）。里面需要配有一系列的电动工具</li>
+            <li>一个<em>FIRST </em>下发的标准配件套装</li>
+            <li>一些愿意帮助你的朋友，陌生人或者是赞助商</li>
+            <li>你对于求知，探索，出谋划策，建立牢不可破的友情，分享你的意见与能力，渴望被接受的热情！但是最重要的，还是。。。<b>玩得开心!</b></li>
+          </ul>
+       </p>  
+     
+    </div>
+    <div class="frc-video col-md-5 col-sm-6 col-xs-12">
+      <iframe src="https://www.youtube.com/embed/q2e5mwYmqr4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!--page-header -->
+  <div class="page-header">
+    <h1 class="text-center"><small>The Event Experience</small></h1>
+  </div>
+
+  <div class="row-p5">
+    <div class="frc-content col-md-7 col-sm-12 col-xs-12">
+       <p><strong>这些繁琐的工作都是值得的！</strong> 每一届的FRC大赛都充满了热情和地方特色，还有数十个队伍为了去到冠军赛的名额的激烈的比赛。FIRST每一级别的比赛都能给予学生们一段难以忘记的记忆，因为他们将欢庆自己的努力，在过程中获得快乐，交更多的朋友，而且将可以增长自己的见识：他们能了解更多新技术和创新的主意，并且他们很可能成为潮流！每一位参赛队员，都有机会获得大学奖学金！</p> 
+       <p>FIRST机器人竞赛的队伍由多种成员组成：参赛队员，成人导师，和义工们。但他们都同意FRC比赛是他们见过的最能带来启发，最棒的经历！你除了在这里，还能在哪里交不同的朋友，分享灵光一闪的点子，在火烧眉毛的节点上解决问题，疯狂的对抗其他人，在琳琅满目的高科技前赞叹，同时感叹这就是人生中那没有几次的经历呢？只有在比赛中，学生才能真正意识到团结，分享，帮助别人，和尊重这几个词的含义吧。</p>
+       <p><a href="http://frc-events.firstinspires.org/" target="_blank">点击这里，来观看2016年的比赛结果</a></p> 
+    </div>
+    <div class="frc-video col-md-5 col-sm-12 col-xs-12">
+      <iframe src="https://www.youtube.com/embed/hcS7M4sY0fQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="row-p0">
+    <div class="home-contact hidden-xs">
+        <h1 class="home-contact-title">Get in touch, let's do FRC! </h1>
+        <p class="hidden-sm home-contact-par" ><em>We are a team full of passion. </em></p>
+        <p><a class="btn btn-lg btn home-contact-btn" href="contact.html" role="button">Contact Us &nbsp;<span class="glyphicon glyphicon-hand-right"></span></a></p>    
+    </div>
+  </div>
+
+  <div class="row-p0">
+      <div class="home-contact visible-xs">
+          <p><a class="btn btn-lg btn home-contact-btn2" href="contact.html" role="button">Contact Us &nbsp;<span class="glyphicon glyphicon-hand-right"></span></a></p>    
+      </div>
+  </div>
+
+   <footer class="panel-footer">
+    <div class="container-1">
+      <div class="row-p5">
+        <section id="hours" class="col-sm-3">
+          <p>FIRST机器人竞赛<br>
+          为了让更多人认识科学和科技的重要性，而且从中得到启发。
+          </p>
+
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-3">
+          <span>地址:</span><br>
+          东5楼，515栋<br>
+          G八卦二路, 鹏基工业区<br>
+          邮编50600，深圳市福田区
+
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>赞助:<br>
+          深圳市搭搭乐乐文化传播有限公司<br>
+          中国城市青少年机器人联盟</p>
+           <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>版权所有:<br>
+          Name: Leo Lei <br>
+          Phone: 158-0755-7813<br>
+          Email: <a class="linkbg" href="www.163.com">leoleiisgood@163.com</a>
+        </section>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="row-p0">
+    <div class="footer-last">
+      <a class="pull-left hidden-xs col-md-4 col-sm-6 col-xs-12"> &copy; Copyright 2017. All rights reserved.</a>
+      <div>
+      <a class="text-center col-md-2 hidden-sm hidden-xs"></a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="index.html">主页</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="frc.html">FRC比赛</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="team.html">队伍</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="blog.html">博客</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="sponsor.html">赞助</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="contact.html">联系我们</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>
